@@ -5,46 +5,26 @@
 ![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A robust and scalable Task Management API built with ASP.NET Core 8.0, featuring JWT authentication, external API integration, and comprehensive CRUD operations. This project demonstrates modern backend development practices with a focus on security, performance, and maintainability.
+A Task Management API built with ASP.NET Core 8.0, featuring JWT authentication, external API integration, and CRUD operations. This project demonstrates modern backend development practices with a focus on security, performance, and maintainability.
 
 ## 🌟 Features
 
 ### Core Functionality
 - **Task Management**: Complete CRUD operations for todos with priority levels
 - **User Authentication**: Secure JWT-based authentication and authorization
-- **External API Integration**: Seamless integration with external prediction services
+- **External API Integration**: integration with external prediction services
 - **File Upload Support**: Image classification through external ML services
 - **Database Integration**: Entity Framework Core with SQL Server
 
 ### Security & Performance
 - **JWT Authentication**: Secure token-based authentication
 - **Password Hashing**: BCrypt implementation for secure password storage
-- **API Documentation**: Comprehensive Swagger/OpenAPI documentation
+- **API Documentation**: Swagger/OpenAPI documentation
 - **CORS Support**: Configurable cross-origin resource sharing
 - **Input Validation**: Robust data validation and error handling
 
-## 🏗️ Architecture
 
-This project follows clean architecture principles with clear separation of concerns:
 
-```
-📁 Project Structure
-├── 🎮 Controllers/          # API endpoints and request handling
-├── 📊 Models/              # Data models and entities
-├── 📦 DTOs/                # Data transfer objects
-├── 🗄️  Data/               # Database context and configurations
-├── 🔄 Migrations/          # Entity Framework migrations
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Before running this project, ensure you have the following installed:
-
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
-- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (LocalDB, Express, or full version)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/) with C# extension
 
 ### Installation
 
@@ -203,22 +183,4 @@ curl -X POST "https://localhost:5001/api/account/login" \
 curl -X GET "https://localhost:5001/api/todos" \
   -H "Authorization: Bearer your_jwt_token"
 ```
-
-## 📚 Dependencies
-
-| Package | Version | Purpose |
-|---------|---------|---------|
-| `Microsoft.EntityFrameworkCore.SqlServer` | 9.0.7 | SQL Server database provider |
-| `Microsoft.AspNetCore.Authentication.JwtBearer` | 8.0.13 | JWT authentication |
-| `BCrypt.Net-Next` | 4.0.3 | Password hashing |
-| `Swashbuckle.AspNetCore` | 6.4.0 | API documentation |
-| `System.IdentityModel.Tokens.Jwt` | 8.13.0 | JWT token handling |
-
-
-## 🙏 Acknowledgments
-
-- [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) for the excellent web framework
-- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) for data access
-- [Swagger](https://swagger.io/) for API documentation
-- The open-source community for inspiration and support
 
