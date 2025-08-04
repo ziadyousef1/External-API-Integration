@@ -150,8 +150,7 @@ public class User
     public string Username { get; set; }
     public string Email { get; set; }
     public string PasswordHash { get; set; }
-    // Additional user properties...
-}
+    public string Role { get; set; } // Admin, User 
 ```
 
 ## 🔐 Authentication
